@@ -113,6 +113,7 @@
 }
 
 .popup {
+  width: 80%;
   background: #5977a7;
   border-radius: 5px;
   position: relative;
