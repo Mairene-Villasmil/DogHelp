@@ -127,7 +127,7 @@
   font-family: Roboto, Arial, sans-serif;
 }
 
-.popupContent{
+.popupContent {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -156,11 +156,38 @@
 }
 
 .content h3,
-.content h4{
+.content h4 {
   text-align: left !important;
   padding: 0;
   margin: 15px;
   line-height: 25px;
+}
+
+@media screen and (max-width: 600px)  {
+  .popup {
+    width: 90%;
+    background: #5977a7;
+    border-radius: 5px;
+    position: relative;
+    transition: all 2s ease-in-out;
+    color: white;
+  }
+
+  .popupContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 55px 10px;
+  }
+
+  .popupContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 25px;
+  }
 }
 
 .match {
@@ -236,6 +263,15 @@ textarea {
   max-width: 100%;
   width: 70em;
   margin-left: 100px;
+}
+
+@media screen and (max-width: 600px) {
+  #texto2 img {
+    display: flex;
+    max-width: 100%;
+    width: 70em;
+    margin-left: 0px;
+}
 }
 
 #texto2 h2 {
@@ -404,8 +440,14 @@ button :hover {
   margin: 3em;
 }
 
-.imgRegistro{
+.imgRegistro {
   width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .imgRegistro {
+    width: 80%;
+}
 }
 
 #inicio h1 {
