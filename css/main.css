@@ -1,4 +1,5 @@
-/*para carpeta de scss se llama @import"componentes/nombre del scss sin extension"*/
+@import url(https://fonts.googleapis.com/css?family=Varela+Round);
+
 .form {
   display: flex;
   max-width: 100%;
@@ -255,7 +256,7 @@ textarea {
 #texto2 img {
   display: flex;
   max-width: 100%;
-  width: 70em;
+  width: 30em;
   margin-left: 100px;
 }
 
@@ -341,7 +342,7 @@ h2 {
 
 h3 {
   font-size: 17.66667px;
-  color: black;
+  color: rgb(0, 0, 0);
   font-family: roboto, sans-serif;
   padding: 10px;
 }
@@ -434,6 +435,10 @@ button :hover {
   margin: 3em;
 }
 
+#inicio h2{
+  margin: 30px 0px;
+}
+
 .imgRegistro {
   width: 40%;
 }
@@ -446,6 +451,12 @@ button :hover {
 
 #inicio h1 {
   color: #011330;
+  text-align: center;
+}
+
+.adopcion p{
+  font-size: 2em;
+  margin-top: 20px;
 }
 
 #inicio h2 {
@@ -455,6 +466,66 @@ button :hover {
 
 #inicio h3 {
   color: #011330;
+}
+
+.perritoCard{
+  background-color: #011330;
+}
+
+.perritoCard h2,
+.perritoCard h4{
+  color: white !important;
+  font-size: 18px;
+}
+
+.cardInicio{
+  background-color: #aab8f0;
+}
+
+.cardVoluntario{
+  background-color: khaki;
+}
+
+.actionButton{
+  font-size: 1.5em;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  animation: move linear 4000ms infinite;  
+  margin: 20px 0px 0px 20px;
+  font-weight: bolder;
+}
+
+@keyframes move {
+  0% {
+    text-shadow:
+
+      -1px 1px 0 rgb(0, 0, 0)
+    ;
+  }
+  25% {    
+    text-shadow:      
+      -4px -4px 0 rgb(0, 0, 0), 
+   
+    ;
+  }
+  50% {
+    text-shadow:
+
+      1px -1px 0 rgb(0, 0, 0)
+    ;
+  }
+  75% {
+    text-shadow:
+      4px 4px 0 rgb(0, 0, 0), 
+    
+    ;
+  }
+  100% {
+    text-shadow:
+
+      -1px 1px 0 rgb(0, 0, 0)
+    ;
+  }  
 }
 
 #inicio button h5 {

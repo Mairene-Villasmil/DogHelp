@@ -1,134 +1,142 @@
-/*para carpeta de scss se llama @import"componentes/nombre del scss sin extension"*/
-
 @import "registrarse";
-@import "amigos";
 @import "match";
 @import "quienes_somos";
 @import "voluntarios";
 @import "variables/variables";
 
-
-body{
+body {
     background-color: #ffffff;
     margin: 6em 0em 0 0em;
-    padding: 0; 
-   
+    padding: 0;
+
 }
 
-main{
+main {
     margin: 0 2em 0 2em;
 }
 
 img {
     display: block;
     margin: 0 auto;
-};
+}
 
+;
 
 //condicionales
-div{
-    @if $color == primary{
+div {
+    @if $color ==primary {
         color: #011330;
-    }@else if $color != primary{
+    }
+
+    @else if $color !=primary {
         color: blue;
     }
 }
 
 //bucles
 
-@for $i from 1 through 6{
+@for $i from 1 through 6 {
+
     //integraciones
-    h#{$i}{
+    h#{$i} {
         font-size: (35px/$i)+6;
         color: #ffffff;
         font-family: roboto, sans-serif;
-};
+    }
+
+    ;
 }
 
 //each
 
 @each $color in $list-colores {
-    .color-#{$color}{
+    .color-#{$color} {
         background-color: $color;
     }
-};
+}
 
 //mapas
 
-@each $red, $color in $redes{
-    .btn-#{$red}{
+@each $red,
+$color in $redes {
+    .btn-#{$red} {
         background-color: $color;
     }
-};
+}
 
-p{
+p {
     color: #011330;
 }
 
-h4{
+h4 {
     padding: 0.5em 2em 0.5em 2em;
 }
 
-button{
+button {
     border-radius: 30px;
     background-color: #011330;
     text-decoration: none;
 
-    :hover{
-        background-color:#343f5f;
-border-radius: 30px;
-text-decoration: none;
-color: #0d6efd;
+    :hover {
+        background-color: #343f5f;
+        border-radius: 30px;
+        text-decoration: none;
+        color: #0d6efd;
     }
-    }
+}
 
+#card-body {
+    background-color: #343f5f;
 
-#card-body{
-    background-color:#343f5f;
-    h2{
+    h2 {
         color: #011330;
     }
-    h3{
+
+    h3 {
         color: #011330;
     }
 }
-    
-#text{
 
-    h2{
+#text {
+
+    h2 {
         color: #011330;
         text-align: center;
         margin-top: 1em;
     }
-    h3{
+
+    h3 {
         color: #011330;
         text-align: center;
     }
-    button{
+
+    button {
         margin-left: 45%;
     }
 }
-#inicio{
+
+#inicio {
     display: flex;
     margin: 3em;
+
     img {
         max-width: 100%;
         width: 100em;
-        }
+    }
 
-    h1{
+    h1 {
         color: #011330;
     }
 
-    h2{
+    h2 {
         color: #011330;
     }
 
-    h3{
+    h3 {
         color: #011330;
-}
+    }
 
-    button h5{
+    button h5 {
 
         border-radius: 30px;
         color: #ffffff;
@@ -137,81 +145,89 @@ color: #0d6efd;
     }
 }
 
-.banner{
+.banner {
     background-color: #011330;
     display: flex;
     border-radius: 10px;
-    
-    img{
+
+    img {
         width: 500px;
     }
-    h2{
+
+    h2 {
         color: #ffffff;
-        padding: 0.5rem 1rem 0.5rem 1rem ;
+        padding: 0.5rem 1rem 0.5rem 1rem;
         margin: 1rem;
         font-size: 24px;
 
-        }
-    h3{
+    }
+
+    h3 {
         color: #ffffff;
-        padding: 0.5rem 1rem 0.5rem 2rem ;
+        padding: 0.5rem 1rem 0.5rem 2rem;
         margin: 1rem;
     }
 }
 
-.texto1{
-    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+.texto1 {
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     margin: 0 10em 0 10em;
-    border-radius:10px ;
+    border-radius: 10px;
     padding: 1em;
-    h2{
-    color: #011330;
-    text-align: left;
+
+    h2 {
+        color: #011330;
+        text-align: left;
     }
-    h3{
-    text-align: left;
-    color: #011330;
+
+    h3 {
+        text-align: left;
+        color: #011330;
     }
 }
 
-.actividades{
-    max-width: 100%;   
+.actividades {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 1em;
-    .cards{
+
+    .cards {
         width: 330px;
         height: 330px;
         border-radius: 8px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         margin: 20px;
         text-align: center;
         transition: all 0.25s;
-      
-        img{
+
+        img {
             width: 330px;
             height: 210px;
-            }
-        h4{
+        }
+
+        h4 {
             font-weight: 600;
             text-align: center;
             color: #011330;
-            }
-        h6{
+        }
+
+        h6 {
             font-size: 16px;
             font-weight: 300;
             color: #011330;
-            }
+        }
     }
 }
 
-.cards:hover{
+.cards:hover {
     transform: translateY(-15px);
-    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2 );
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
 }
-footer{
+
+footer {
     padding: 1em 1em 1em 3em;
     grid-area: footer;
     display: block;
@@ -221,84 +237,97 @@ footer{
 }
 
 
-.container2{
-    max-width: 100%;   
+.container2 {
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin: 1em;
-    .card{
+
+    .card {
         width: 330px;
         height: 330px;
         border-radius: 8px;
-        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2 );
+        box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
         overflow: hidden;
         margin: 20px;
         text-align: left;
         transition: all 0.25s;
-        :hover{
+
+        :hover {
             transform: translateY(-15px);
-            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2 );
-            }
-        
-        img{
+            box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        img {
             width: 330px;
             height: 220px;
-            }
-        h4{
+        }
+
+        h4 {
             font-weight: 600;
             text-align: center;
-            }
-        h6{
+        }
+
+        h6 {
             font-weight: 300;
             color: #011330;
-            }
-        a{
+        }
+
+        a {
             font-weight: 500;
             text-decoration: none;
             color: #011330;
-            }
         }
+    }
 }
 
-      /*-----*/
+/*-----*/
 header {
     width: 100%;
-        nav{
-            z-index:1000;
-            max-width: 100%;
-            width:100%;
-            @media screen and (max-width: 300px) {
-                  width: 80%;
-                  height: calc(100% - 80px);
-                  position: fixed;
-                  right:100%;
-                  margin: 0;
-                  overflow: scroll;
-            }
-            ul{
-                list-style:none;
-               li{
-                display:inline-block;
+
+    nav {
+        z-index: 1000;
+        max-width: 100%;
+        width: 100%;
+
+        @media screen and (max-width: 300px) {
+            width: 80%;
+            height: calc(100% - 80px);
+            position: fixed;
+            right: 100%;
+            margin: 0;
+            overflow: scroll;
+        }
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
                 position: relative;
+
                 @media screen and (max-width: 300px) {
                     display: block;
-                    border-bottom:1px solid rgba(255,255,255,.5);
-                  }
-                :hover{
-                    background:#092144;
-                    color:#7daffc;
+                    border-bottom: 1px solid rgba(255, 255, 255, .5);
                 }
-                a{
-                    color:#fff;
-                    display:block;
-                    text-decoration:none;
+
+                :hover {
+                    background: #092144;
+                    color: #7daffc;
+                }
+
+                a {
+                    color: #fff;
+                    display: block;
+                    text-decoration: none;
                     padding: 20px;
+
                     @media screen and (max-width: 300px) {
                         display: block;
-                      }
+                    }
                 }
-               }
             }
         }
+    }
 }
